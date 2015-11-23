@@ -1,0 +1,59 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+<form action="/docprofile" method="post">
+	<h1> Doctor's profile page </h1>
+
+	<h4>Registration<a href="/docprofile/editregistration">Edit</a></h4>
+	<p>Number:  <%= user.registration.number %></p>
+	<p>Name:  <%= user.registration.name %></p>
+	<p>Year:  <%= user.registration.year %></p>
+
+	<h4>Address<a href="/docprofile/editaddress">Edit</a></h4>
+	<p>Full Address: <%= user.address.fulladdress %> </p>
+	<p>Pin: <%= user.address.pin %></p>
+	<p>City: <%= user.address.city %></p>
+	<p>Country: <%= user.address.country %></p>
+	<p>Latitude: <%= user.address.latitude %></p>
+	<p>Longitude: <%= user.address.longitude %></p>
+
+	<h4>Award<a href="/docprofile/editaward">Edit</a></h4>
+	<p>Name:  <%= user.award.name %></p>
+	<p>Year:  <%= user.award.year %></p>
+
+	<h4>Membership<a href="/docprofile/editmembership">Edit</a></h4>
+	<p>Name:  <%= user.membership.name %></p>
+
+	<h4>Organisation<a href="/docprofile/editorganisation">Edit</a></h4>
+	<p>Name:  <%= user.organisation.name %></p>
+	<p>Address:  <%= user.organisation.address %></p>
+	<p>Phone:  <%= user.organisation.phone %></p>
+	<p>Mobile:  <%= user.organisation.mobile %></p>
+
+	<h4>Qualification<a href="/docprofile/editqualification">Edit</a></h4>
+	<p>Degree:  <%= user.qualification.degree %></p>
+	<p>College:  <%= user.qualification.college %></p>
+	<p>Year:  <%= user.qualification.year %></p>
+
+	<h4>Service<a href="/docprofile/editservice">Edit</a></h4>
+	<p>Name:  <%= user.service.name %></p>
+
+	<h4>Specialization<a href="/docprofile/editspecialization">Edit</a></h4>
+	<p>Name:  <%= user.specialization.name %></p>
+
+	<button type="submit">Next</button>
+
+</form>
+</div>
+</body>
+</html>

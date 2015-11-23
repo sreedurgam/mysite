@@ -1,0 +1,60 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+<form action="/docprofile/editorganisation" method="post">
+<table>
+<tr>
+<td>
+Name 
+</td>
+<td>
+<input type="text" placeHolder="Name" name="name"></input>
+</td>
+</tr>
+
+<tr>
+<td>
+Address 
+</td>
+<td>
+<input type="text" placeHolder="Address" name="address"></input>
+</td>
+</tr>
+
+<tr>
+<td>
+Phone
+</td>
+<td>
+<input type="text" placeHolder="Phone" name="phone"></input>
+</td>
+</tr>
+
+<tr>
+<td>
+Mobile
+</td>
+<td>
+<input type="text" placeHolder="Mobile" name="mobile"></input>
+</td>
+</tr>
+</table>
+<button type="submit" class="btn btn-warning btn-lg">Save</button>
+<a href="/">Cancel</a>
+
+</form>	
+
+</div>
+</body>
+</html>

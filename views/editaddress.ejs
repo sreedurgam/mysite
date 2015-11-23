@@ -1,0 +1,77 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+<form action="/docprofile/editaddress" method="post">
+<table>
+<tr>
+<td>
+Full Address 
+</td>
+<td>
+<input type="text" placeHolder="Full Address" name="fulladdress"></input>
+</td>
+</tr>
+<tr>
+<td>
+PIN
+</td>
+<td>
+<input type="text" placeHolder="PIN" name="pin"></input>
+</td>
+</tr>
+<tr>
+<td>
+City
+</td>
+<td>
+<input type="text" placeHolder="City" name="city"></input>
+</td>
+</tr>
+<tr>
+<td>
+Country
+</td>
+<td>
+<input type="text" placeHolder="Country" name="country"></input>
+</td>
+</tr>
+<tr>
+<td>
+Latitude
+</td>
+<td>
+<input type="text" placeHolder="latitude" name="latitude"></input>
+</td>
+</tr>
+<tr>
+<td>
+Longitude
+</td>
+<td>
+<input type="text" placeHolder="longitude" name="longitude"></input>
+</td>
+</tr>
+<tr>
+<td>
+<button type="submit" class="btn btn-warning btn-lg">Save</button>
+<a href="/">Cancel</a>
+</td>
+</tr>
+</table>
+
+</form>	
+
+</div>
+</body>
+</html>
